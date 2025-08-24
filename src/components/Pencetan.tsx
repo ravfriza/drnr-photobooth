@@ -4,11 +4,8 @@ import { toast } from "sonner"
 import { Button } from "./ui/button"
 import { Toaster } from "./ui/sonner"
 import { redirect, RedirectType } from "next/navigation"
-import { useRef } from "react"
 
 const Pencetan = () => {
-    const audioRef = useRef<HTMLAudioElement>(null)
-
     const handleClick = () => {
         toast("warning : kelamaan betmut bisa digigit orgil 📢❗🚨")
 
