@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+// import { Button } from "@/components/ui/button"
 import DrnrLogo from "@/drnr-assets/logo.png"
 import PhotoboothText from "@/drnr-assets/photobooth-text.png"
 import Sun from "@/drnr-assets/sun.png"
