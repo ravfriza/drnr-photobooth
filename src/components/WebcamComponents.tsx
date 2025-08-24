@@ -104,6 +104,7 @@ export default function WebcamComponent() {
             <Webcam
               audio={false}
               ref={webcamRef}
+              mirrored={true}
               screenshotFormat="image/jpeg"
               screenshotQuality={WEBCAM_CONFIG.quality}
               videoConstraints={videoConstraints}
