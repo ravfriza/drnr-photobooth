@@ -15,7 +15,7 @@ import Pencetan from "@/components/Pencetan";
 
 export default function Home() {
   return (
-    <div className="max-w-[100rem] mx-auto min-h-screen flex items-center justify-center">
+    <div className="max-w-[100rem] mx-auto h-dvh md:mih-h-screen flex items-center justify-center">
       <main className="flex justify-between items-start">
         <div className="md:flex flex-col relative gap-16 w-2/5 hidden">
           <Image src={Sun} alt="sun" className="w-52" />
@@ -25,7 +25,7 @@ export default function Home() {
           <Image src={Glasses} alt="glasses" className="w-48" />
           <Image src={Superman} alt="superman" className="w-96" />
         </div>
-        <div className="flex flex-col justify-start items-center gap-y-6 md:gap-y-36 mt-20">
+        <div className="flex flex-col justify-start items-center gap-y-6 md:gap-y-36 md:mt-20">
           <div className="flex justify-start items-center flex-col gap-2">
             <Image src={DrnrLogo} alt="drnr-logo" className="w-1/3 md:w-2/5 h-fit" />
             <Image src={PhotoboothText} alt="photobooth-text" className="w-3/4 md:w-full h-fit" />

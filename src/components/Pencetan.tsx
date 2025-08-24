@@ -4,11 +4,13 @@ import { toast } from "sonner"
 import { Button } from "./ui/button"
 import { Toaster } from "./ui/sonner"
 import { redirect, RedirectType } from "next/navigation"
+import { useRef } from "react"
 
 const Pencetan = () => {
+    const audioRef = useRef<HTMLAudioElement>(null)
 
     const handleClick = () => {
-        toast("semoga cepet sembuh dan betmutnya ilang 😁")
+        toast("warning : kelamaan betmut bisa digigit orgil 📢❗🚨")
 
         setTimeout(() => {
             redirect('/photoshot', RedirectType.push);
