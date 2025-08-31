@@ -1,57 +1,53 @@
-// import { Button } from "@/components/ui/button"
 import DrnrLogo from "@/drnr-assets/logo.png"
 import PhotoboothText from "@/drnr-assets/photobooth-text.png"
 import Sun from "@/drnr-assets/sun.png"
-import Spark from "@/drnr-assets/spark.png"
+import Spark from "@/drnr-assets/spark-2.png"
 import Glasses from "@/drnr-assets/glasses.png"
-import Superman from "@/drnr-assets/superman.png"
-import Jupiter from "@/drnr-assets/jupiter.png"
-import Cring from "@/drnr-assets/cring.png"
-import String from "@/drnr-assets/string.png"
-import Telescope from "@/drnr-assets/telescope.png"
+import Kite from "@/drnr-assets/kite.png"
+import YellowMan from "@/drnr-assets/yellow-man.png"
+import BlueMan from "@/drnr-assets/blue-man.png"
+import PurpleMan from "@/drnr-assets/purple-man.png"
+import ThreeStars from "@/drnr-assets/3-stars.png"
 import Image from "next/image";
-// import Toaster from "@/components/ui/sonner";
 import Pencetan from "@/components/Pencetan";
 
 export default function Home() {
   return (
-    <div className="max-w-[100rem] mx-auto h-dvh md:mih-h-screen flex items-center justify-center">
-      <main className="flex justify-between items-start">
-        <div className="md:flex flex-col relative gap-16 w-2/5 hidden">
-          <Image src={Sun} alt="sun" className="w-52" />
-          <div className="absolute right-32 top-32">
-          <Image src={Spark} alt="sun" className="w-24" />
-          </div>
-          <Image src={Glasses} alt="glasses" className="w-48" />
-          <Image src={Superman} alt="superman" className="w-96" />
+    <div className="flex justify-center">
+      <main className="w-full max-w-xl h-dvh border-4 border-dashed border-black relative">
+        <div className="absolute left-6 top-6">
+          <Image src={Sun} className="w-20 md:w-28" alt="sun"/>
         </div>
-        <div className="flex flex-col justify-start items-center gap-y-6 md:gap-y-36 md:mt-20">
-          <div className="flex justify-start items-center flex-col gap-2">
-            <Image src={DrnrLogo} alt="drnr-logo" className="w-1/3 md:w-2/5 h-fit" />
-            <Image src={PhotoboothText} alt="photobooth-text" className="w-3/4 md:w-full h-fit" />
+        <div className="absolute right-6 top-6">
+          <Image src={Spark} className="w-12 md:w-16" alt="spark"/>
+        </div>
+          <div className="flex justify-center flex-col items-center mt-20 md:mt-28 gap-y-1">
+          <Image src={DrnrLogo} alt="drnr-logo" className="w-32 md:w-44 h-fit" />
+          <Image src={PhotoboothText} alt="photobooth-text" className="w-60 md:w-[22rem] h-fit" />
           </div>
-          <div>
-            {/* <Button
-              variant="outline"
-              className="rounded-full flex items-center justify-center text-lg px-6 py-3 md:text-4xl md:px-16 md:py-8 border-4 md:border-8 border-black font-medium tracking-wide"
-            >
-              pencet sini kak
-            </Button>
-            <Toaster/> */}
+        <div className="absolute left-10 top-52 md:top-72">
+          <Image src={Glasses} className="w-20 md:w-32" alt="glasses"/>
+        </div>
+        <div className="absolute right-28 top-44 md:right-44 md:top-64">
+          <Image src={Kite} className="w-16 md:w-20" alt="kite"/>
+        </div>
+        <div className="absolute right-6 top-60 md:right-10 md:top-[21.5rem]">
+          <Image src={YellowMan} className="w-20 md:w-32" alt="yellow-man"/>
+        </div>
+        <div className="absolute left-10 top-96 md:left-12 md:top-[34rem]">
+          <Image src={BlueMan} className="w-24 md:w-32" alt="blue-man"/>
+        </div>
+        <div className="absolute right-6 top-[31rem] md:right-10 md:top-[42rem]">
+          <Image src={PurpleMan} className="w-20 md:w-[7.5rem]" alt="purple-man"/>
+        </div>
+       
+
+          <div className="flex justify-center mt-[21rem] md:mt-[28rem]">
             <Pencetan/>
           </div>
-        </div>
-        <div className="md:flex flex-col w-2/5 relative hidden">
-          <Image src={Jupiter} alt="sun" className="ms-40 w-44" />
-          <div className="flex justify-end">
-            <Image src={Cring} alt="glasses" className="w-32" />
-          </div>
-          <div className="flex justify-end mt-10">
-            <Image src={String} alt="telescope" className="w-64" />
-          </div>
-          <div className="flex justify-end mt-10">
-          <Image src={Telescope} alt="telescope" className="w-60" />
-          </div>
+
+          <div className="absolute bottom-14 left-1/2 -translate-x-1/2">
+          <Image src={ThreeStars} className="w-28 md:w-[7.5rem]" alt="purple-man"/>
         </div>
       </main>
     </div>

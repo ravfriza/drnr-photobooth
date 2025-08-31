@@ -18,7 +18,7 @@ const Pencetan = () => {
         <>
             <Button
                 variant="outline"
-                className="rounded-full flex items-center justify-center text-lg px-6 py-3 md:text-4xl md:px-16 md:py-8 border-4 md:border-8 border-black font-medium tracking-wide"
+                className="rounded-full flex items-center justify-center text-lg px-6 py-3 md:text-2xl md:px-8 md:py-4 border-4 md:border-8 border-black font-medium tracking-wide"
                 onClick={handleClick}
             >
                 pencet sini kak
