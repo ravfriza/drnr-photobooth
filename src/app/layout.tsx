@@ -1,22 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Patrick_Hand } from "next/font/google";
+import localFont from 'next/font/local'
+
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const patrickHand = Patrick_Hand({
-  variable: "--font-patrick-hand",
-  weight: "400",
-  subsets: ["latin"],
-});
+const AnkaCoder = localFont({
+  src: './AnkaCoder-r.ttf',
+  display: 'swap',
+  variable: '--font-anka-coder'
+})
 
 export const metadata: Metadata = {
   title: "DRNR",
@@ -30,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${patrickHand.variable} font-sans antialiased bg-[#f5f5f5]`}>
+      <body className={`${AnkaCoder.variable} font-sans antialiased bg-[#f5f5f5]`}>
         {children}
       </body>
     </html>
