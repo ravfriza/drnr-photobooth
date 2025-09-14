@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${AnkaCoder.variable} font-sans antialiased bg-[#f5f5f5]`}>
+      <body className={`${AnkaCoder.variable} antialiased bg-[#f5f5f5]`} style={{fontFamily: 'var(--font-anka-coder)'}}>
         {children}
       </body>
     </html>

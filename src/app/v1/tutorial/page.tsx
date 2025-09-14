@@ -6,7 +6,7 @@ import BlueMoji from "@/drnr-assets/bluemoji.png"
 import NuggetRoblok from "@/drnr-assets/nuggetroblok.png"
 import Flower from "@/drnr-assets/flower.png"
 import Nerdie from "@/drnr-assets/nerdie.png"
-import Presen from "@/drnr-assets/presen.png" 
+// import Presen from "@/drnr-assets/presen.png" 
 
 import Image from "next/image"
 // Import Swiper React components
